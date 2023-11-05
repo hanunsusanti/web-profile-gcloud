@@ -1,0 +1,373 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.25px;
+}
+
+
+/* ------HEADER AND NAVIGATION SECTION------ */
+header {
+    display: inline;
+}
+
+nav {
+    justify-content: space-between;
+    padding: 8px 0px 20px 780px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    padding-inline: 2rem;
+    display: flex;
+    gap: 50px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+nav a:hover {
+    font-weight:bolder;
+}
+/* ------END OF HEADER AND NAVIGATION SECTION------ */
+
+
+/* ------MAIN------ */
+
+/* ------BERANDA SECTION------ */
+.content-beranda {
+    display: flex;
+    gap: 222px;
+    padding: 50px 0px 100px 0px;
+}
+
+.content-beranda-description {
+    flex-basis: 60%;
+    flex-grow: 0;
+    margin-left: 50px;
+    margin-top: 100px;
+
+    text-align: center;
+}
+
+.content-beranda-description p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 35px;
+}
+
+.content-beranda-description img {
+    width: 350px;
+
+}
+
+.content-beranda-description button{
+    background-color: #FFC436;
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 999px;
+    font-size: 18px;
+}
+
+.content-beranda-image img {
+    width: 500px;
+}
+/* ------END OF BERAND SECTION------ */
+
+/* ------FITUR SECTION------ */
+.fitur-container{
+    padding: 30px 80px 80px 80px;
+    background-color: #FFC436;
+}
+.fitur-container h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 30px;
+}
+
+.fitur-content {
+    display: flex;
+    gap: 50px;
+}
+
+.fitur-content-box {
+    margin-bottom: 50px;
+    width: 380px;
+    height: 440px;
+    background-color: white;
+    border-radius: 100px;
+}
+.fitur-content-box img{
+    width: 250px;
+    padding-top: 90px;
+    padding-left: 60px;   
+}
+
+.fitur-content-box h3 {
+    text-align: center;
+    margin: 30px 80px 50px 80px;
+}
+
+/* ------END OF FITUR SECTION------ */
+
+/* ------TENTANG SECTION------ */
+.tentang-container {
+    padding: 30px 100px 80px 100px;
+    background-color: #337CCF;
+}
+
+.tentang-container h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 30px;
+}
+
+.tentang-content {
+    display: flex;
+    gap: 106px;
+}
+
+.tentang-content img {
+    width: 500px;
+}
+
+.tentang-content-description {
+    color: #FFFCFC;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+/* ------END OF TENTANG SECTION------ */
+
+/* ------ASIDE SECTION------ */
+.aside-container {
+    display: flex;
+    gap: 200px;
+    padding: 150px 80px 100px 80px;
+}
+
+/* ADDRESS CONTENT */
+.address-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-content img {
+    width: 230px;
+}
+
+.address-content a {
+    font-size: 20px;
+    font-weight: 500px;
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+/* END OF ADDRESS CONTENT */
+
+/* CONTACT ADN SOCIAL MEDIA */
+.contact-content ul, .social-media ul {
+    padding: 0px;
+}
+
+.contact-content li, .social-media li {
+    list-style-type: none;
+}
+
+.contact-content a, .social-media a{
+    display: flex;
+    gap: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.contact-content img {
+    width: 50px;
+    height: 45px;
+    padding-top: 20px;
+}
+
+.contact-content p {
+    padding-top: 16px;
+}
+
+.social-media img {
+    width: 45px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.social-media p {
+    padding-top: 15px;
+}
+/* END OF CONTACT AND SOCIAL MEDIA*/
+/* ------END OF MAIN------ */
+
+/* ------FOOTER SECTION------ */
+footer {
+    text-align: center;
+}
+
+footer p2 {
+    font-weight: bold;
+    font-size: 14px;
+}
+/* ------END OF FOOTER SECTION------ */
+
+
+@media screen and (max-width: 768px) {  
+  
+    nav {
+        padding: 5px 0px 10px 50px;
+        background-color: white;
+    }
+
+    nav ul {
+      gap: 15px;
+      padding: 0;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+    
+    .content-beranda {
+      flex-direction: column;
+      gap: 60px;
+      padding-top: 50px;
+    }
+  
+    .content-beranda-description {
+      flex-basis: 100%;
+      margin-left: 0;
+      margin-top: 0;
+      text-align: center;
+    }
+  
+    .content-beranda-description img {
+      width: 250px;
+    }
+  
+    .content-beranda-description p {
+      font-size: 16px;
+      margin: 15px;
+    }
+  
+    .content-beranda-description button {
+      height: 40px;
+      width: 130px;
+      font-size: 16px;
+    }
+  
+    .content-beranda-image img {
+      width: 100%;
+    }
+  
+    .fitur-container {
+      padding: 40px 30px 100px 30px;
+    }
+  
+    .fitur-container h1 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  
+    .fitur-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .fitur-content-box {
+      width: 100%;
+      border-radius: 20%;
+      height: 100%;
+    }
+  
+    .fitur-content-box img {
+      width: 80%;
+      padding-top: 20px;
+      padding-left: 10%;
+    }
+  
+    .fitur-content-box h3 {
+      margin: 10px 20px 30px 20px;
+      text-align: center;
+    }
+  
+    .tentang-container {
+      padding: 20px;
+    }
+  
+    .tentang-container h1 {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+  
+    .tentang-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .tentang-content img {
+      width: 100%;
+    }
+  
+    .tentang-content-description {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  
+    .aside-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 50px 20px 20px 20px;
+    }
+
+    .address-content a {
+        font-size: 18px;
+        font-weight: 500px;
+        padding-top: 15px;
+        padding-right: 20px;
+    }
+
+    .address-content img {
+      width: 50%;
+    }
+  
+    .contact-content a, .social-media a {
+      flex-direction: row;
+      gap: 15px;
+    }
+  
+    .contact-content img, .social-media img {
+      width: 30px;
+      height: 30px;
+      padding-top: 10px;
+    }
+
+    .contact-content p{
+        padding-top: 0;
+    }
+    
+    .social-media p {
+        padding-top: 0px;
+    }
+  }
